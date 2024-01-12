@@ -6,4 +6,4 @@ ferretImage.addEventListener('click', () => {
     counter++;
     counterElement.textContent = counter;
     petFerret();
-}
+})
