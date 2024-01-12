@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet The Ferret :3</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            cursor: url('https://media.tenor.com/3EbQTgb3eqwAAAAi/petpet-transparent.gif'), auto; /*uwu i love this idea*/
+            animation: moveCursor 3s infinite linear; 
+            background-color: #fce6f2; /* perfect color idk sue me */
+        }
+
+        #container {
+            text-align: center;
+        }
+
+        #ferret-container {
+            position: relative;
+            margin-top: 20px; 
+        }
+
+        #ferret {
+            width: 300px;
+            border-radius: 15px;
+            user-select: none; 
+            transition: transform 0.2s ease, filter 0.2s ease; /* hihi i like this a lot i am gonna murder someone <3 */
+        }
+
+        #ferret:hover {
+            transform: scale(1.05); 
+        }
+
+        #ferret:active {
+            transform: scale(0.95); 
+            filter: brightness(80%) saturate(120%) contrast(80%); 
+        }
+
+        p {
+            margin-top: 20px; 
+            font-size: 1.2em; 
+            color: #ff3399;
+            text-shadow: 2px 2px 4px #ffd9f5; 
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+            cursor: pointer; 
+            display: inline-block; 
+            text-shadow: 2px 2px 4px #ffd9f5; 
+            animation: colorChange 5s infinite alternate; 
+        }
+
+        .rainbow-text {
+            display: inline-block;
+            animation: rainbowText 5s infinite;
+        }
+
+        .wave-text {
+            display: inline-block;
+            animation: swayText 1s infinite alternate;
+            color: #ffcc00; 
+        }
+
+        @keyframes moveCursor {
+            0% {
+                transform: translate(0, 0);
+            }
+            25% {
+                transform: translate(5px, 5px);
+            }
+            50% {
+                transform: translate(0, 0);
+            }
+            75% {
+                transform: translate(-5px, -5px);
+            }
+            100% {
+                transform: translate(0, 0);
+            }
+        }
+
+        @keyframes colorChange {
+            /* Idk why it doesn't work i gave up qwq */
+            0% {
+                color: #ff3399; 
+            }
+            50% {
+                color: #ff66b2; 
+            }
+            100% {
+                color: #ff3399; 
+            }
+        }
+
+        @keyframes swayText {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-5px); 
+            }
+        }
+
+        @keyframes rainbowText {
+            /* Nipi Gay */
+            0% {
+                color: #ff0000; /* Blood */
+            }
+            16.666% {
+                color: #ff9900; 
+            }
+            33.333% {
+                color: #ffcc00; 
+            }
+            50% {
+                color: #00ff00; 
+            }
+            66.666% {
+                color: #3399ff; /* Nipi */
+            }
+            83.333% {
+                color: #cc66ff; /* uwu */
+            }
+            100% {
+                color: #ff0000; /* blood */
+            }
+        }
+        .wave-text:nth-child(1) {
+            animation: swayText 1s infinite alternate 0.1s, rainbowText 5s infinite alternate 0.1s;
+        }
+        .wave-text:nth-child(2) {
+            animation: swayText 1s infinite alternate 0.3s, rainbowText 5s infinite alternate 0.2s;
+        }
+        .wave-text:nth-child(3) {
+            animation: swayText 1s infinite alternate 0.5s, rainbowText 5s infinite alternate 0.3s;
+        }
+        .wave-text:nth-child(4) {
+            animation: swayText 1s infinite alternate 0.7s, rainbowText 5s infinite alternate 0.4s;
+        }
+        .wave-text:nth-child(5) {
+            animation: swayText 1s infinite alternate 0.9s, rainbowText 5s infinite alternate 0.5s;
+        }
+        .wave-text:nth-child(6) {
+            animation: swayText 1s infinite alternate 1.1s, rainbowText 5s infinite alternate 0.6s;
+        }
+        .wave-text:nth-child(7) {
+            animation: swayText 1s infinite alternate 1.3s, rainbowText 5s infinite alternate 0.7s;
+        }
+        .wave-text:nth-child(8) {
+            animation: swayText 1s infinite alternate 1.5s, rainbowText 5s infinite alternate 0.8s;
+        }
+        .wave-text:nth-child(9) {
+            animation: swayText 1s infinite alternate 1.7s, rainbowText 5s infinite alternate 0.9s;
+        }
+        .wave-text:nth-child(10) {
+            animation: swayText 1s infinite alternate 1.9s, rainbowText 5s infinite alternate 1s;
+        }
+        .wave-text:nth-child(11) {
+            animation: swayText 1s infinite alternate 2.1s, rainbowText 5s infinite alternate 1.1s;
+        }
+        .wave-text:nth-child(12) {
+            animation: swayText 1s infinite alternate 2.3s, rainbowText 5s infinite alternate 1.2s;
+        }
+        .wave-text:nth-child(13) {
+            animation: swayText 1s infinite alternate 2.5s, rainbowText 5s infinite alternate 1.3s;
+        }
+        .wave-text:nth-child(14) {
+            animation: swayText 1s infinite alternate 2.7s, rainbowText 5s infinite alternate 1.4s;
+        }
+        /* ty michei <3 */
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1 onclick="petFerret()" class="rainbow-text">
+            <span class="wave-text">P</span>
+            <span class="wave-text">e</span>
+            <span class="wave-text">t</span>
+            <span class="wave-text">&nbsp;&nbsp;</span>
+            <span class="wave-text">t</span>
+            <span class="wave-text">h</span>
+            <span class="wave-text">e</span>
+            <span class="wave-text">&nbsp;&nbsp;</span> 
+            <span class="wave-text">F</span>
+            <span class="wave-text">e</span>
+            <span class="wave-text">r</span>
+            <span class="wave-text">r</span>
+            <span class="wave-text">e</span>
+            <span class="wave-text">t</span>
+            <span class="rainbow-text"> :3</span>
+        </h1>
+        <div id="ferret-container">
+            <img id="ferret" src="ferret.png" alt="Ultimate Satisfying Ferret" draggable="false" onclick="petFerret()">
+        </div>
+        <p style="color: #ff3399;">Times Petted: <span id="counter">0</span></p>
+    </div>
+
+    <script src="script.js"></script>
+
+    <script>
+        function petFerret() {
+            var ferret = document.getElementById('ferret');
+            ferret.style.transform = 'scale(1.05)';
+            setTimeout(function () {
+                ferret.style.transform = 'scale(1)';
+            }, 150); // 200 too much 140 too not much kms <3
+        }
+    </script>
+</body>
+</html>
